@@ -1,0 +1,12 @@
+{
+	"extends": "@tommy-mitchell/tsconfig",
+	"include": ["src"],
+	"compilerOptions": {
+		"erasableSyntaxOnly": true,
+		"moduleResolution": "nodenext",
+		"rewriteRelativeImportExtensions": true,
+		"noEmit": true,
+		"types": ["node"],
+		"verbatimModuleSyntax": true,
+	},
+}

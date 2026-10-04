@@ -1,0 +1,52 @@
+{
+	"name": "@tommy-mitchell/test-helpers",
+	"version": "0.0.0",
+	"description": "Common test helpers and dependencies for my projects.",
+	"license": "MIT",
+	"repository": "tommy-mitchell/test-helpers",
+	"author": "Tommy Mitchell (https://tommymitchell.io)",
+	"type": "module",
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"default": "./dist/index.js"
+	},
+	"sideEffects": false,
+	"engines": {
+		"node": "^22.22 || ^24.15 || >=26"
+	},
+	"scripts": {
+		"prepublishOnly": "npm run build",
+		"build": "pkgroll --clean-dist",
+		"lint": "dprint check && xo",
+		"format": "dprint fmt && xo --fix"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"nodejs",
+		"testing",
+		"ava"
+	],
+	"dependencies": {
+		"async-sema": "^3.1.1",
+		"dedent": "^1.7.2",
+		"execa": "^10.0.1",
+		"get-executable-bin-path": "^1.0.0",
+		"test-quadruple": "^1.0.0"
+	},
+	"devDependencies": {
+		"@tommy-mitchell/dprint-config": "^0.10.0",
+		"@tommy-mitchell/eslint-config-xo": "^2.0.0-beta.11",
+		"@tommy-mitchell/tsconfig": "^4.0.0",
+		"@types/node": "^22.20",
+		"ava": "^8.0.1",
+		"dprint": "^0.60.1",
+		"pkgroll": "^2.28.1",
+		"typescript": "~6.0.3",
+		"xo": "^5.0.1"
+	},
+	"peerDependencies": {
+		"ava": "^8.0.1"
+	}
+}
