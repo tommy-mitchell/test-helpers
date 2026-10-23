@@ -15,7 +15,6 @@
 		"node": "^22.22 || ^24.15 || >=26"
 	},
 	"scripts": {
-		"prepublishOnly": "npm run build",
 		"build": "pkgroll --clean-dist",
 		"lint": "dprint check && xo",
 		"format": "dprint fmt && xo --fix"
