@@ -1,5 +1,5 @@
 {
-	"extends": "@tommy-mitchell/tsconfig",
+	"extends": "@tommy-mitchell/configs/ts",
 	"include": ["src"],
 	"compilerOptions": {
 		"erasableSyntaxOnly": true,
